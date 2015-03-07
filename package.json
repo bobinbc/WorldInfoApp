@@ -19,5 +19,8 @@
   "homepage": "https://github.com/bobinbc/WorldInfoApp",
   "dependencies": {
     "express": "^4.12.2"
-  }
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
 }
