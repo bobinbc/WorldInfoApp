@@ -10,9 +10,10 @@
 
 <body ng-controller="AppCtrl">
     <div class="container">
-        <div class="navbar">
-            <div class="navbar-inner">
-                <a class="brand" href="#/">World Info</a>
+        <div class= "head">
+            <div class="brandi">
+<!--                <a  href="#/">World Info</a>-->
+                <p>World Info</p>
                 <ul class="nav">
 
                 </ul>
@@ -22,13 +23,18 @@
             <input type="text" ng-model="city">
                     <input type="button" name="Search" ng-click="updateCity()">Search</input>
         </div>-->
-        <div ng-controller="WeatherListCtrl">
+        <div ng-controller="WeatherListCtrl" class="inform">
             <ul class="thumbnails">
-                {{data.name}}  {{data.main.temp}}
+               <p class="city"> {{data.name}} </p>
+
                 <li class=thumbnail ng-repeat="weather in data.weather">
+                    <img ng-src="http://openweathermap.org/img/w/{{weather.icon}}.png" width="100" height="100">
+                    <p>{{data.main.temp}}</p>
                     <p>{{weather.main}}</p>
                     <p>{{weather.description}}</p>
-                    <img ng-src="http://openweathermap.org/img/w/{{weather.icon}}.png" width="50" height="50">
+<!--                    <p>{{weather-humidityTarget}}</p>-->
+
+
                 </li>
             </ul>
         </div>
