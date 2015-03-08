@@ -10,7 +10,7 @@ controllers.controller('AppCtrl', function ($scope) {
 });
 
 
-controllers.controller('GetCityNameCtrl', function ($scope, $http) {
+/*controllers.controller('GetCityNameCtrl', function ($scope, $http) {
 //    $scope.data;
 //    $scope.city = "London";
 
@@ -25,7 +25,7 @@ controllers.controller('GetCityNameCtrl', function ($scope, $http) {
 
     };
 });
-
+*/
 controllers.controller('WeatherListCtrl', function ($scope, $http) {
     $scope.data;
 //$scope.city = "London";
