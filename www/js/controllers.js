@@ -29,7 +29,7 @@ controllers.controller('AppCtrl', function ($scope) {
 controllers.controller('WeatherListCtrl', function ($scope, $http) {
     $scope.data;
 //$scope.city = "London";
-    $http.jsonp('https://api.openweathermap.org/data/2.5/weather?q=Kitchener&&units=metric&&callback=JSON_CALLBACK').then(function (data) {
+    $http.jsonp('http://api.openweathermap.org/data/2.5/weather?q=Kitchener&&units=metric&&callback=JSON_CALLBACK').then(function (data) {
         $scope.data = data.data;
         console.log(data);
     })
